@@ -5,6 +5,8 @@
 #------------------------------------------------------------------------------
 if defined?(FatFreeCRM::Application)
   FatFreeCRM::Application.configure do
+    # Log leverls
+    config.log_level = :warn
     # Settings specified here will take precedence over those in config/application.rb
     config.eager_load = true
 
@@ -17,7 +19,7 @@ if defined?(FatFreeCRM::Application)
     config.action_controller.perform_caching = true
 
     # Disable Rails's static asset server (Apache or nginx will already do this)
-    config.serve_static_assets = true
+    config.serve_static_files = true
 
     # Compress JavaScripts and CSS
     config.assets.compress = true

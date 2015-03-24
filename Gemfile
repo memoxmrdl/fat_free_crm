@@ -27,6 +27,7 @@ end
 
 # Remove premailer auto-require
 gem 'premailer', require: false
+gem 'pretty_formatter'
 
 # Remove fat_free_crm dependency, to stop it from being auto-required too early.
 remove 'fat_free_crm'
